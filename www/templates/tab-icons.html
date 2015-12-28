@@ -1,0 +1,23 @@
+<ion-view view-title="Icons">
+  <ion-content class="padding">
+      <section id="cd-timeline" class="cd-container">
+        <div ng-repeat="activity in timeline">
+          <div class="cd-timeline-block">
+            <!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
+            <div class="cd-timeline-icon text-center royal">
+              <i class="ion-image timelineIcon" ng-if="(activity.type=='picture')"></i>
+              <i class="ion-ios-videocam timelineIcon" ng-if="activity.type=='video' "></i>
+              <i class="ion-location timelineIcon" ng-if="activity.type=='location'"></i>
+              <i class="ion-android-textsms timelineIcon" ng-if="activity.type=='text'"></i>
+            </div>
+            <!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
+            <div class="cd-timeline-content padding royal">
+            	<h5 class="marginBottom0 marginTop0">{{activity.title}}</h5>
+            	<p class="marginTop5 cd-author">by {{activity.author}} on {{activity.date | date: "d MMM"}}</p>
+            	<p class="timelineText">{{activity.text}}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </ion-content>
+</ion-view>

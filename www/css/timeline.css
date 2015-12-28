@@ -1,0 +1,224 @@
+/* -------------------------------- 
+
+Paddings and margins
+
+-------------------------------- */
+.marginBottom0 {
+  margin-bottom: 0;
+}
+.marginTop0 {
+  margin-top: 0;
+}
+.marginTop5 {
+  margin-top: 5px !important;
+}
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 93%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.timelineText {
+  color: black;
+}
+.timelineIcon {
+  font-size: 25px;
+  color: white;
+}
+.cd-author {
+  color:gray;
+}
+#cd-timeline {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 10px !important;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: gray;
+}
+
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+.cd-timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: #4a87ee;
+  border-style: solid;
+  border-width: 2px;
+  padding-top:5px;
+  background: white;
+}
+.cd-timeline-icon i {
+  color: #4a87ee;
+}
+.cd-timeline-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: #4a87ee;
+  border-style: solid;
+  border-width: 2px;
+  background: white;
+}
+.cd-timeline-picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cd-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  border-radius: 0.25em;
+  border-color: #BDDFB3;
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 10px;
+}
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-content h2 {
+  color: #303e49;
+}
+.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  display: inline-block;
+}
+.cd-timeline-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+
+.cd-timeline-content::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+  border-right-color: inherit;
+}
+
+/*COLORS*/
+/*POSITIVE*/
+.positive {
+  border-color: #4a87ee;
+}
+.positive i {
+  color: #4a87ee;
+}
+/*CALM*/
+.calm {
+  border-color: #43cee6;
+}
+.calm i {
+  color: #43cee6;
+}
+/*BALANCED*/
+.balanced {
+  border-color: #66cc33;
+}
+.balanced i {
+  color: #66cc33;
+}
+/*ENERGIZED*/
+.energized {
+  border-color: #f0b840;
+}
+.energized i {
+  color: #f0b840;
+}
+/*ASSERTIVE*/
+.assertive {
+  border-color: #ef4e3a;
+}
+.assertive i {
+  color: #ef4e3a;
+}
+/*ROYAL*/
+.royal {
+  border-color: #8a6de9;
+}
+.royal i {
+  color: #8a6de9;
+}
+/*DARK*/
+.dark {
+  border-color: #444;
+}
+.dark i {
+  color: #444;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-timeline-content h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
