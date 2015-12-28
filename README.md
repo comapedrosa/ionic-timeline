@@ -1,5 +1,6 @@
 # Ionic timeline
-
+###[Demo](http://codepen.io/comapedrosa/pen/gPLaxJ)
+###[View on ionic market](http://market.ionic.io/plugins/ionic-timeline)
 Ionic timelone is a simple yet useful plugin that allows you to create a simple customizable timeline/feed for your ionic apps.
 
   - Easy to customize
