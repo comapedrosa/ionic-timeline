@@ -11,6 +11,8 @@ Ionic timelone is a simple yet useful plugin that allows you to create a simple 
   - Compatible with your existing code.
  
 #### Details
+Include the timeline.css file in your project. That's it! 
+
 This feed works with a simple ng-repeat within a `section` as you will see in the code.
 ```
       <section id="cd-timeline" class="cd-container">
