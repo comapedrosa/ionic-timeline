@@ -90,6 +90,7 @@ Main components
   border-width: 2px;
   padding-top:5px;
   background: white;
+  text-align: center;
 }
 .cd-timeline-icon i {
   color: #4a87ee;
@@ -123,6 +124,7 @@ Main components
   border-style: solid;
   border-width: 2px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 .cd-timeline-content:after {
   content: "";

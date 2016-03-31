@@ -4,11 +4,11 @@
         <div ng-repeat="activity in timeline">
           <div class="cd-timeline-block">
           	<!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
-            <div class="cd-timeline-picture text-center dark">
+            <div class="cd-timeline-picture dark">
               <img ng-src="/img/{{activity.profilePicture}}"></img>
             </div>
             <!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
-            <div class="cd-timeline-content padding dark">
+            <div class="cd-timeline-content dark">
             	<h5 class="marginBottom0 marginTop0">{{activity.title}}</h5>
             	<p class="marginTop5 cd-author">by {{activity.author}} on {{activity.date | date: "d MMM"}}</p>
             	<p class="timelineText">{{activity.text}}</p>
